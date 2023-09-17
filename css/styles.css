@@ -420,6 +420,11 @@ footer .disclaimer a {
 
 @media screen and (min-width: 1400px) {
 
+    body {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
+
     /* ***** HEADER ****** */
 
     h1 {
@@ -518,7 +523,7 @@ footer .disclaimer a {
         position: relative;
         max-width: 70%;
         top: -6rem;
-        left: -11rem;
+        left: -4rem;
     }
 
     .explore-restaurants {
