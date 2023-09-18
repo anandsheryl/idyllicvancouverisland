@@ -167,6 +167,20 @@ footer .disclaimer a {
     font-style: italic;
 }
 
+.contact-details {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.contact-detail-links a {
+    text-decoration: none;
+    color:#da6a00;
+}
+
+.contact-detail-links a:hover {
+    color:blue;
+}
+
 
 /* Media Screen Size: 1024px */
 
