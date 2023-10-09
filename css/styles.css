@@ -93,6 +93,13 @@ main {
 
 /* ***** SECTION 1 ***** */
 
+.scroll-text {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color:rgb(129, 11, 1);
+    font-size: 1.25rem;
+}
+
 h2:first-of-type {
     color: #629045;
     margin-bottom: 1.5rem;
@@ -683,6 +690,10 @@ footer .disclaimer a {
     .menu a:hover {
         text-decoration: underline;
         color: #da6a00;
+    }
+
+    .scroll-text {
+        display: none;
     }
 
     /* ***** SECTION 1 ***** */
