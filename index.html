@@ -12,6 +12,7 @@
     <title>Idyllic Vancouver Island: Wonderful Holiday with Delicious Food, Luxury Hotels and More</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTECTMN9FK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -24,18 +25,36 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <img src="img/travel-logo-image.png" alt="Aeroplane flying and travelling to Vancouver Island">
-            <h1>Discover the Idyllic Vancouver Island</h1>
+        <div class="header-flex-container">
+            <div class="header-container">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <title>Airplane</title>
+                    <path
+                        d="M24 19.999l-5.713-5.713 13.713-10.286-4-4-17.141 6.858-5.397-5.397c-1.556-1.556-3.728-1.928-4.828-0.828s-0.727 3.273 0.828 4.828l5.396 5.396-6.858 17.143 4 4 10.287-13.715 5.713 5.713v7.999h4l2-6 6-2v-4l-7.999 0z">
+                    </path>
+                </svg>
+
+                <h1>Discover the Idyllic Vancouver Island</h1>
+                <button aria-label="Navigation Menu" class="toggle-button" aria-expanded="false"
+                    aria-controls="expanded-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        <title>Menu</title>
+                    </svg>
+                </button>
+            </div>
+            <nav id="expanded-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#activities-link">Activities</a></li>
+                    <li><a href="#food-link">Food</a></li>
+                    <li><a href="#to-stay-links">Stay</a></li>
+                    <li><a href="#more-information">More Information</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navigation-links">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Visit Places</a></li>
-                <li><a href="#">Accomodations</a></li>
-                <li><a href="#">Restaurants</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <h2>Longing for a Wonderful <span>Summer Holiday?</span> </h2>
@@ -46,75 +65,313 @@
                 </p>
                 <p>This idyllic Vancouver Island is situated on the south-west of a Canadian province called British
                     Columbia.
-                    It is the largest island found on the Pacific Coast of North America.
-                    This paradise is about 460 kilometres in size and is home to many animals found within its diverse
+                    It is the largest island found on the Pacific Coast of North America.</p>
+                <p>This paradise is about 460 kilometres in size and is home to many animals found within its diverse
                     ecosystems.
                 </p>
                 <!-- <p>Vancouver island: Super, natural BC. Super, Natural BC | British Columbia Travel Information. (n.d.).https://www.hellobc.com/places-to-go/vancouver-island/</p> -->
-                <a href="#" class="discover-more">Discover More</a>
             </div>
-            <div>
+            <div class="section-1-image-container">
                 <img src="img/trees-and-river.webp" alt="Abundant trees beside river and mountains in Vancouver Island">
                 <img src="img/mountains-and-beach.webp"
                     alt="Rugged Mountains near clear-blue river in the idyllic island">
             </div>
         </div>
+            
         <!-- <p>Britannica, T. Editors of Encyclopaedia (2023, September 3). Vancouver Island. Encyclopedia Britannica. https://www.britannica.com/place/Vancouver-Island</p> -->
-        <div class="section-2">
-            <div>
-                <h2>Fun Activities at Idyllic Vancouver Island</h2>
-                <p>Explore this enchanting island and participate in exciting and engaging activities such as whale and
-                    bear
-                    watching, sea kayaking and embrace its fascinating mountains and spectacular ocean scenes throughout
-                    the
-                    island. </p>
-                <a href="#" class="learn-more">Learn More</a>
-            </div>
+        <div id="activities-link" class="section-2">
+            <h2>Fun Activities at Idyllic Vancouver Island</h2>
+            <div class="section-2-content">
+                <div>
+                    <p>Explore this enchanting island and participate in exciting and engaging activities such as whale and
+                        bear
+                        watching, sea kayaking and embrace its fascinating mountains and spectacular ocean scenes throughout
+                        the
+                        island. </p>
+                    <p>This idyllic island is known for its stunning landscapes, lush forests and pristine lakes.</p>
+                    <p>Strathcona Provincial Park and Gulf Islands are popular destinations to witness the
+                        island's indescribable beauty! </p>
+                </div>
+                <!-- <p>ChatGPT. (2023, September 29). [Response to user question]. Retrieved from: https://chat.openai.com/c/a7a2a32f-87ef-42b0-a823-c0bf563383f7</p>    -->
             <img src="img/kayaking-on-lake.webp" alt="Kayaking Activities in the Idyllic Vancouver Island">
+            </div>
+            <a href="#discover-more-activities" class="discover-more">Discover More</a>
+            <div id="discover-more-activities" class="horizontal-content-activities">
+                <div>
+                    <img src="img/strathcona-provincial-park.webp" alt="Visit Strathcona Provincial Park">
+                    <h3>Witness <span>Strathcona Park's</span> Explicit Beauty</h3>
+                </div>
+                <div>
+                    <img src="img/orcas-whales-jumping.webp" alt="3 Orcas Whales jumping out of the ocean ">
+                    <h3>Watch Humpback Whales and Orcas</h3>
+                </div>
+                <div>
+                    <img src="img/man-fishing-lake.webp" alt="A man fishing at a lake">
+                    <h3>Go Fishing by <span>Horne Lake Caves</span></h3>
+                </div>
+                <div>
+                    <img src="img/butchart-gardens.webp" alt="Visit the Butchart Gardens">
+                    <h3>Visit the Beautiful <span>Butchart Gardens</span></h3>
+                </div>
+                <div>
+                    <img src="img/castle.webp" alt="Visit Craigdarroch Castle">
+                    <h3>Enjoy Ancient <span>Craigdarroch Castle's</span> Beauty</h3>
+                </div>
+                <div>
+                    <img src="img/shopping-mall.webp" alt="Shopping mall">
+                    <h3>Go on a Shopping Spree</h3>
+                </div>
+            </div>
         </div>
-        <div class="section-3">
+        <div id="food-link" class="section-3">
+            <h2>Gratify your Cravings</h2>
             <div class="section-3-content">
-                <h2>Gratify your Cravings</h2>
-                <p>Enjoy tasting delicious food from different cuisines along with rich treats for dessert.
-                    Don’t have a sweet-tooth? Then enjoy savoury pastries all available at our awesome cafes. </p>
-                <p>Dine in at <span class="restaurant-text-color">Wolf in the Fog</span> and relish your scrumptious
-                    meal
-                    beside the cosmic ocean! </p>
-                <p>Enjoy grilled food? Definitely eat out at <span class="restaurant-text-color">James Island
-                        Grill!</span></p>
-                <a href="#" class="explore-restaurants">Explore Restaurants</a>
+                <div>
+                    <p>Enjoy tasting delicious food from different cuisines along with rich treats for dessert.
+                        Don’t have a sweet-tooth? Then enjoy savoury pastries all available at our awesome cafes. </p>
+                    <p>Dine in at <span class="restaurant-text-color">Wolf in the Fog</span> and relish your scrumptious
+                        meal
+                        beside the cosmic ocean! </p>
+                    <p>Enjoy grilled food? Definitely eat out at <span class="restaurant-text-color">James Island
+                            Grill!</span></p>
+                </div>
+                <div class="section-3-image-container">
+                    <img src="img/chicken-sandwhich.webp"
+                        alt="Chicken Sandwich to relish during your stay at Vancouver Island">
+                    <img src="img/chocolate-cake.webp"
+                        alt="Mouth-watering Chocolate Cake and other yummy desserts to satisfy your cravings">
+                </div>
             </div>
-            <div>
-                <img src="img/chicken-sandwhich.webp"
-                    alt="Chicken Sandwich to relish during your stay at Vancouver Island">
-                <img src="img/chocolate-cake.webp"
-                    alt="Mouth-watering Chocolate Cake and other yummy desserts to satisfy your cravings">
+            <a href="#view-more-food" class="explore-restaurants">Explore Restaurants</a>
+            <div id="view-more-food" class="horizontal-content-food">
+                <div>
+                    <img src="img/ribs-and-chips.webp" alt="Yummy Ribs and Chips at The Schooner Restaurant ">
+                    <h3>Ribs and Chips at <span>The Schooner Restaurant</span></h3>
+                </div>
+                <div>
+                    <img src="img/chicken-taco.webp" alt="Juicy Loaded Chicken Tacos at Floyd's Diner">
+                    <h3>Chicken Tacos at <span>Floyd's Diner</span></h3>
+                </div>
+                <div>
+                    <img src="img/healthy-salad.webp" alt="Healthy salad at Brasserie L'ecole ">
+                    <h3>Healthy Salad at <span>Brasserie L'ecole</span></h3>
+                </div>
+                <div>
+                    <img src="img/burger-and-chicken.webp" alt="Tasty chicken burger at Trees Restaurant">
+                    <h3>Chicken Burger <span>Trees Restaurant</span></h3>
+                </div>
+                <div>
+                    <img src="img/shrimp-sea-food.webp" alt="Mouth-watering shrimps at Deep Cove Chalet">
+                    <h3>Shrimps at <span>Deep Cove Chalet</span></h3>
+                </div>
+                <div>
+                    <img src="img/pizza.webp" alt="Delicious Pizza at Freshslice Pizza">
+                    <h3>Pizza at <span>Freshslice Pizza</span> </h3>
+                </div>
             </div>
         </div>
-        <div class="section-4">
-            <div class="section-4-content">
+        <div id="to-stay-links" class="section-4">
+            <div class="section-4-inner-container">
                 <h2>Luxurious Hotels</h2>
-                <p>Discover deluxe resorts and hotels with world class service and amenities and scrumptious meals
-                    during
-                    your
-                    stay at the Idyllic Vancouver Island.</p>
-                <p>Stop by <span class="hotel-text-color">Oak Bay Beach Hotel</span> and savor its spectacular ocean
-                    views.</p>
-                <p>Stay in at <span class="hotel-text-color"> Brentwood Bay Resort</span> (a five star hotel) and
-                    experience its exemplary services.</p>
+                <div class="section-4-content">
+                    <div>
+                        <p>Discover deluxe resorts and hotels with world class service and amenities and scrumptious meals
+                            during
+                            your
+                            stay at the Idyllic Vancouver Island.</p>
+                        <p>Stop by <span class="hotel-text-color">Oak Bay Beach Hotel</span> and savor its spectacular ocean
+                            views.</p>
+                        <p>Stay in at <span class="hotel-text-color"> Brentwood Bay Resort</span> (a five star hotel) and
+                            experience its exemplary services.</p>
+                        <a href="#view-more-to-stay" class="view-accomodations">View Accomodations
+                        </a>
+                    </div>
+                    <img src="img/vancouver-island-resort.webp"
+                    alt="Luxury resorts and hotels to have a pleasant holiday at the Idyllic Vancouver Island">
+                </div>
             </div>
-            <img src="img/vancouver-island-resort.webp"
-                alt="Luxury resorts and hotels to have a pleasant holiday at the Idyllic Vancouver Island">
+            
+            <div id="view-more-to-stay" class="horizontal-content-hotels">
+                <div>
+                    <img src="img/large-pool-resort.webp" alt="Huge Hotel Grand Pacific with Pool">
+                    <h3>Stopover at <span>Hotel Grand Pacific</span></h3>
+                </div>
+                <div>
+                    <img src="img/dolphin-near-hotel.webp" alt="Doplhin over the pool near Oak Bay Beach Hotel">
+                    <h3>Hang over at <span>Oak Bay Beach Hotel</span></h3>
+                </div>
+                <div>
+                    <img src="img/bridge-over-pool.webp" alt="Bridge over the pool at Pacific Shores">
+                    <h3>Stay at <span>Pacific Shores Resort and Spa</span></h3>
+                </div>
+                <div>
+                    <img src="img/large-hotel-near-pool.webp" alt="Stay the night at a large hotel near an ocean">
+                    <h3>Spend the night at <span>Ocean Resort</span></h3>
+                </div>
+                <div>
+                    <img src="img/large-resort-and-pool.webp" alt="Large Beach Club Resort to Lodge">
+                    <h3>Lodge at <span>Beach Club Resort</span></h3>
+                </div>
+                <div>
+                    <img src="img/palm-trees-near-pool.webp" alt="Palm trees near Wild Coast Chalets">
+                    <h3>Rest at <span>Wild Coast Chalets</span></h3>
+                </div>
+
+            </div>
         </div>
+        <div class="ad-container">
+            <img src="img/Leaderboard Banner.webp" alt="Leaderboard Banner">
+            <img src="img/Square Banner.webp" alt="Square Banner">
+        </div>
+        <div id="more-information" class="section-5">
+            <h2>More about Vancouver Island</h2>
+            <!-- <p>ChatGPT. (2023, September 29). [Response to user question]. Retrieved from: https://chat.openai.com/c/a7a2a32f-87ef-42b0-a823-c0bf563383f7</p>    -->
+            <div class="section-5-flex-container">
+                <div class="section-5-part-1">
+                    <div class="section-5-content">
+                        <p>Vancouver Island has a very diverse wildlife which includes eagles, bears and salmon.</p>
+                        <p>Tourists usually enjoy whale watching, particularly orcas and humpback whales.</p>
+                    </div>
+                    <img src="img/eagle.webp" alt="Eagle soaring in the blue sky">
+                </div>
+                <div class="section-5-part-2">
+                    <img src="img/girl-at-university.webp" alt="Girl attending a pretigious university">
+                    <div class="section-5-content">
+                        <p>Vancouver Island is home to many universities, colleges and cultural institutions.</p>
+                        <p>The most prominent higher education institutions are University of Victoria and
+                            Vancouver Island University.</p>
+                    </div>
+                </div>
+                <div class="section-5-part-3">
+                    <div class="section-5-content">
+                        <p>Vancouver Island is diverse in populations and rich in culture.
+                            The population has a mix of urban and rural communities.</p>
+                        <p>It is home to several indigneous communities. These communities have a rich cultural heritage
+                            and connection to the land.
+                        </p>
+                        <p>The island's economy has many sectors such as forestry, tourism, technology,
+                            healthcare and fishing.</p>
+                        <p>Tourism is the dominant industry as tourists as attracted to the island's phenomenal beauty.
+                        </p>
+                    </div>
+                    <img src="img/maple-leaf.webp" alt="Person holding a maple leaf in a lush forest">
+                </div>
+                <div class="section-5-part-4">
+                    <img src="img/ferry-on-ocean.webp" alt="Ferry travelling on an ocean">
+                    <!-- <p>ChatGPT. (2023, October 08). [Response to user question]. Retrieved from: https://chat.openai.com/c/3984d46d-ccb5-4c93-84e2-5fdd226f3c8c</p>    -->
+                    <div class="section-5-content">
+                        <p>Commute is easily accessible as there are many ferry routes to easy travel
+                            between locations within the island.</p>
+                        <p>Most people rely on public transport as it is affordable and quick to commute.
+                            People use the LRT or bus services. 
+                        </p>
+                        <p>Cars are also available for rent especially for tourists who would love to explore the island by themselves at their own pace.</p>
+                    </div>
+                </div>
+                <div class="section-5-part-5">
+                    <div class="section-5-content">
+                        <p>The winters in Vancouver Island are less severe compared to other
+                            places in Canada.
+                        </p>
+                        <p>Winters on the western coast tend to be more colder and high in humidity as it is surrounded
+                            by the Pacific Ocean, while the winters on the eastern coast are less humid, filled with ample
+                            sunshine.
+                        </p>
+                    </div>
+                    <div class="section-5-image-container">
+                        <img src="img/greenery-ample-sunshine.webp" alt="Green Scene with lots of sunshine">
+                        <img src="img/city-after-rain.webp" alt="Roads and buildings view after heavy rain">
+                    </div>
+                </div>
+    
+                    <!-- <p>ChatGPT. (2023, October 03). [Response to user question]. Retrieved from: https://chat.openai.com/c/104c6271-d2b9-4901-8c2c-e1d9867b1a98</p>    -->
+                    <div class="section-5-part-6">
+                        <img src="img/surfing-ocean.webp" alt="Person surfing on Vancouver Island Ocean">
+                        <div class="section-5-content">
+                            <p>Outdoor enthusiasts have plenty of activities to keep themselves occupied during their stay
+                                on the island.
+                            </p>
+                            <p>This includes scuba-diving, fishing, biking, surfing, biking and hiking.
+                                The beautiful outdoor landscapes provide ample opportunities for fun and entertaining
+                                activities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="section-5-part-7">
+                        <div class="section-5-content">
+                            <p>This idyllic Vancouver Island also offers many cultural attractions such as museums,
+                                art galleries and heritage sites which represent the island's indigneous heritage and rich
+                                history.
+                            </p>
+                        </div>
+                        <img src="img/art-gallery-girl.webp" alt="Girl looking at art in an art gallery">
+                    </div>
+    
+                    <!-- <p>ChatGPT. (2023, October 03). [Response to user question]. Retrieved from: https://chat.openai.com/c/1d0f2743-2bcc-4501-bcf2-a36517cc667c</p>    -->
+    
+                    <div class="section-5-part-8">
+                        <div class="section-5-content-8">
+                            <div>
+                                <div class="section-5-content-8-1">
+                                    <p>Vancouver Island is also well known for its fresh seafood such as salmon,
+                                        halibut and spot prawns.
+                                    </p>
+                                    <img src="img/salmon-food.webp" alt="Tasty Sea Food like salmon">
+                                </div>
+                                <div class="section-5-content-8-2">
+                                    <p>It is also home to several handmade cheese producers. These cheeses are made from locally
+                                        sourced milk so make sure you do not miss tasting their delicious and different varieties of
+                                        cheese.
+                                    </p>
+                                    <img src="img/many-different-cheese.webp" alt="Variety of different cheese">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="section-5-content-8-3">
+                                    <p>The island has thriving wine industry which produces high quality wines such as
+                                        whites, reds and sparkling varieties.
+                                        The Cowhican Valley is particularly known for producing wine.
+                                    </p>
+                                    <img src="img/red-wine-glass.webp" alt="Red wine being poured into a glass">
+                                </div>
+                                <div class="section-5-content-8-4">
+                                    <p>There are a wide variety of cuisines present due to the island's multicultural population
+                                        including Mexican, Indian, Italian, Chinese, Japanese and so much more.
+                                        Definitely keep an eye out for food festivals to satisfy your cravings.
+                                    </p>
+                                    <img src="img/sushi-food.webp" alt="Sushi ready to eat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- <p>ChatGPT. (2023, October 03). [Response to user question]. Retrieved from: https://chat.openai.com/c/976088e9-1e33-44cb-9a3d-a8d898093380</p>    -->
+    
+                    <div class="section-5-part-9">
+                        <div class="section-5-content">
+                            <p>There are ample upscale resorts and hotels to stay at Vancouver Island.
+                                They offer luxurious ammenities, along with ocean views and spa services.
+                            </p>
+                            <p>There are budget friendly options such as hostels mainly found in Victoria and Tofino
+                                which is a perfect option for those on a tight budget.
+                            </p>
+                            <p>There are historic accomodations too which offer a unique peak into the region's past.</p>
+                            <p>Vancouver Island also has unique and beautiful camping sites to spend time leisurely.</p>
+                        </div>
+                        <img src="img/resort-fancy.webp" alt="Fancy resort with ocean view">
+                    </div>
+            </div>
+            </div>
     </main>
+
+
     <footer>
         <div class="footer-flex-container">
-            <nav class="footer-links">
-                <ul class="flex-container-footer-links">
+            <div>
+                <ul>
                     <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
                 </ul>
-            </nav>
+            </div>
             <div class="social-links">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>Facebook</title>

@@ -12,6 +12,7 @@
     <title>Idyllic Vancouver Island: Wonderful Holiday with Delicious Food, Luxury Hotels and More</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HTECTMN9FK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -24,18 +25,36 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <img src="img/travel-logo-image.png" alt="Aeroplane flying and travelling to Vancouver Island">
-            <h1>Discover the Idyllic Vancouver Island</h1>
+        <div class="header-flex-container">
+            <div class="header-container">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <title>Airplane</title>
+                    <path
+                        d="M24 19.999l-5.713-5.713 13.713-10.286-4-4-17.141 6.858-5.397-5.397c-1.556-1.556-3.728-1.928-4.828-0.828s-0.727 3.273 0.828 4.828l5.396 5.396-6.858 17.143 4 4 10.287-13.715 5.713 5.713v7.999h4l2-6 6-2v-4l-7.999 0z">
+                    </path>
+                </svg>
+
+                <h1>Discover the Idyllic Vancouver Island</h1>
+                <button aria-label="Navigation Menu" class="toggle-button" aria-expanded="false"
+                    aria-controls="expanded-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        <title>Menu</title>
+                    </svg>
+                </button>
+            </div>
+            <nav id="expanded-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#activities-link">Activities</a></li>
+                    <li><a href="index.html#food-link">Food</a></li>
+                    <li><a href="index.html#to-stay-links">Stay</a></li>
+                    <li><a href="index.html#more-information">More Information</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navigation-links">
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Visit Places</a></li>
-                <li><a href="#">Accomodations</a></li>
-                <li><a href="#">Restaurants</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section>
@@ -52,12 +71,11 @@
     </main>
     <footer>
         <div class="footer-flex-container">
-            <nav class="footer-links">
-                <ul class="flex-container-footer-links">
+            <div>
+                <ul>
                     <li><a href="contactus.html">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
                 </ul>
-            </nav>
+            </div>
             <div class="social-links">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <title>Facebook</title>
