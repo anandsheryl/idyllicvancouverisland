@@ -648,11 +648,11 @@ footer .disclaimer a {
         gap: 2%;
     }
 
-    .ad-container a img:first-of-type {
+    .ad-container img:first-of-type {
         max-width: 80%;
     }
 
-    .ad-container a img:last-of-type {
+    .ad-container img:last-of-type {
         max-width: 20%;
     }
 
@@ -876,7 +876,7 @@ footer .disclaimer a {
         margin: 0 auto;
     }
 
-    .ad-container a img {
+    .ad-container img {
         width: 100%;
     }
 
