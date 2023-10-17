@@ -358,6 +358,10 @@ h2:first-of-type {
     margin-bottom: 1.5rem;
 }
 
+.ad-container a {
+    display: block;
+}
+
 /* ***** SECTION 5 ***** */
 
 .section-5 img {
@@ -649,11 +653,11 @@ footer .disclaimer a {
     }
 
     .ad-container img:first-of-type {
-        max-width: 80%;
+        max-width: 100%;
     }
 
     .ad-container img:last-of-type {
-        max-width: 20%;
+        max-width: 100%;
     }
 
 }
@@ -874,10 +878,11 @@ footer .disclaimer a {
         margin-bottom: 1.5rem;
         max-width: 1100px;
         margin: 0 auto;
+        display: flex;
     }
 
     .ad-container img {
-        width: 100%;
+        flex: 1 0 100%;
     }
 
     .section-5 {
