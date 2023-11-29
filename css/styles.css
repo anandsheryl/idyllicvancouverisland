@@ -124,9 +124,22 @@ main {
 }
 
 h2:first-of-type {
-    color: #629045;
     margin-bottom: 1.5rem;
+    animation-name: headingSlideIn;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
 }
+
+@keyframes headingSlideIn {
+    0% {
+        color: #629045 ;
+        transform: translateX(-400%);
+      }
+      100% {
+        transform: translateX(0%);
+        color: #165022;
+      }
+  }
 
 .section-1 p {
     padding-top: 2%;
@@ -189,18 +202,6 @@ h2:first-of-type {
     border-radius: 3px;
     height: 25rem;
 }
-
-.ad-container:hover {
-    animation-name: contentEnlarge;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-}
-
-@keyframes contentEnlarge {
-      0% {
-        transform: translateX(-20%);
-        }
-  }
 
 .horizontal-content-activities div img {
     flex: 1 0 100%;
@@ -395,6 +396,18 @@ h2:first-of-type {
 
 .ad-container a {
     display: block;
+}
+
+.ad-container:hover {
+    animation-name: contentEnlarge;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes contentEnlarge {
+      0% {
+        transform: translateX(-20%);
+        }
 }
 
 /* ***** SECTION 5 ***** */
