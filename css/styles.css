@@ -124,6 +124,7 @@ main {
 }
 
 h2:first-of-type {
+    color: #629045;
     margin-bottom: 1.5rem;
     animation-name: headingSlideIn;
     animation-duration: 3s;
@@ -399,12 +400,12 @@ h2:first-of-type {
 }
 
 .ad-container:hover {
-    animation-name: contentEnlarge;
+    animation-name: adSlideIn;
     animation-duration: 3s;
     animation-iteration-count: 1;
 }
 
-@keyframes contentEnlarge {
+@keyframes adSlideIn {
       0% {
         transform: translateX(-20%);
         }
