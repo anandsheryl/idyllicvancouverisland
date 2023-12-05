@@ -46,11 +46,12 @@ header svg {
 @keyframes planeLogoSlideIn {
     0% {
         transform: translateX(-400%) translateY(600%);
-      }
-      100% {
+    }
+
+    100% {
         transform: translateX(0%);
-      }
-  }
+    }
+}
 
 header button {
     border: 0;
@@ -100,10 +101,10 @@ nav li:last-of-type {
 
 @keyframes fancyNavEffects {
     100% {
-      transform: scale(1.2);
-      color: #da6a00;
+        transform: scale(1.2);
+        color: #da6a00;
     }
-  }
+}
 
 h1 {
     display: none;
@@ -133,14 +134,15 @@ h2:first-of-type {
 
 @keyframes headingSlideIn {
     0% {
-        color: #629045 ;
+        color: #629045;
         transform: translateX(-400%);
-      }
-      100% {
+    }
+
+    100% {
         transform: translateX(0%);
         color: #165022;
-      }
-  }
+    }
+}
 
 .section-1 p {
     padding-top: 2%;
@@ -406,9 +408,9 @@ h2:first-of-type {
 }
 
 @keyframes adSlideIn {
-      0% {
+    0% {
         transform: translateX(-20%);
-        }
+    }
 }
 
 /* ***** SECTION 5 ***** */
@@ -444,6 +446,48 @@ br {
     margin-bottom: 3rem;
 }
 
+/* ***** SECTION 6 ***** */
+
+.section-6-container {
+    background-color: #033047;
+    padding: 1rem;
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-6-container h2 {
+    color: white;
+    text-align: center;
+}
+
+.section-6-container a {
+    text-decoration: none;
+    display: block;
+    color: #da6a00;
+    padding-bottom: 0;
+    font-size: 1.2rem;
+}
+
+.section-6-container a:hover {
+    text-decoration: underline;
+}
+
+.section-7-container {
+    background-color: #15011c;
+    padding: 1rem;
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-7-container h2 {
+    color: white;
+}
+
+.section-7-container img {
+    flex: 1 0 100%;
+}
 
 /* ***** FOOTER ***** */
 
@@ -539,9 +583,9 @@ footer .disclaimer a {
 
 .more-contact-details-flex-container {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     gap: 1rem;
-    
+
 }
 
 .more-contact-details-flex-container svg {
@@ -569,7 +613,7 @@ footer .disclaimer a {
 
     .header-flex-container {
         display: flex;
-        align-items:self-start;
+        align-items: self-start;
         justify-content: space-between;
         color: white;
         padding: 0;
@@ -753,6 +797,25 @@ footer .disclaimer a {
 
     .ad-container img:last-of-type {
         max-width: 100%;
+    }
+
+    .section-6-container h2 {
+        color: white;
+        text-align: center;
+    }
+
+    .section-7-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .section-7-container h2 {
+        color: white;
+    }
+    
+    .section-7-container img {
+        max-width:calc(94%/3);
     }
 
     /* CONTACT US */
@@ -1054,6 +1117,21 @@ footer .disclaimer a {
         margin-top: 5.3rem;
     }
 
+    .section-7-flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .section-7-container h2 {
+        color: white;
+        text-align: center;
+    }
+    
+    .section-7-container img {
+        max-width:calc(97%/3);
+    }
+
     /* ***** FOOTER ***** */
 
     .footer-flex-container {
@@ -1062,7 +1140,15 @@ footer .disclaimer a {
         display: flex;
         flex-wrap: nowrap;
         align-items: center;
+    }
 
+    .section-6-container {
+        padding: 3rem;
+    }
+
+    .section-6-container h2 {
+        color: white;
+        padding-bottom: 2rem;
     }
 
     /* CONTACT US */
@@ -1075,7 +1161,7 @@ footer .disclaimer a {
 
     .contact-form {
         display: block;
-        
+
     }
 
     .submit-button {
